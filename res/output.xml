@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181226 19:41:05.365">
+<suite id="s1" name="Tsting" source="C:\selenium using appium\neeraj\Tsting">
+<suite id="s1-s1" name="Test" source="C:\selenium using appium\neeraj\Tsting\Test.robot">
+<test id="s1-s1-t1" name="Test">
+<kw name="setup and open android phone1">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${APPIUM_SERVER1}</arg>
+<arg>platformName=android</arg>
+<arg>platformVersion=8</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.grabqpons.android</arg>
+<arg>newCommandTimeout=500000</arg>
+<arg>appActivity=com.grabqpons.android.MainActivity</arg>
+</arguments>
+<assign>
+<var>${androiddriver1}</var>
+</assign>
+<msg timestamp="20181226 19:41:22.574" level="INFO">${androiddriver1} = 1</msg>
+<status status="PASS" starttime="20181226 19:41:05.519" endtime="20181226 19:41:22.574"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.view.View[@index= '0']/android.widget.Button[@index='0']</arg>
+</arguments>
+<status status="PASS" starttime="20181226 19:41:22.574" endtime="20181226 19:41:31.997"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.View[@index= '0']/android.widget.Button[@index='0']</arg>
+</arguments>
+<msg timestamp="20181226 19:41:31.998" level="INFO">Clicking element '//android.view.View[@index= '0']/android.widget.Button[@index='0']'.</msg>
+<status status="PASS" starttime="20181226 19:41:31.997" endtime="20181226 19:41:32.564"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20181226 19:41:34.566" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20181226 19:41:32.565" endtime="20181226 19:41:34.566"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.View[@index='3']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.EditText[@index='0']</arg>
+<arg>Asdf@gmail.com</arg>
+</arguments>
+<msg timestamp="20181226 19:41:34.568" level="INFO">Typing text 'Asdf@gmail.com' into text field '//android.view.View[@index='3']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.EditText[@index='0']'</msg>
+<status status="PASS" starttime="20181226 19:41:34.566" endtime="20181226 19:41:35.494"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.EditText[@index='0']</arg>
+<arg>Asdf@1234</arg>
+</arguments>
+<msg timestamp="20181226 19:41:35.495" level="INFO">Typing text 'Asdf@1234' into text field '//android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.EditText[@index='0']'</msg>
+<status status="PASS" starttime="20181226 19:41:35.494" endtime="20181226 19:41:36.321"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.View[@index='2']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.Button[@index='0']</arg>
+</arguments>
+<msg timestamp="20181226 19:41:36.322" level="INFO">Clicking element '//android.view.View[@index='2']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.Button[@index='0']'.</msg>
+<status status="PASS" starttime="20181226 19:41:36.321" endtime="20181226 19:41:37.047"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20181226 19:41:52.048" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20181226 19:41:37.047" endtime="20181226 19:41:52.048"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.webkit.WebView[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.app.Dialog[@index='1']/android.view.View[@index='0']/android.widget.Button[@index='3']</arg>
+</arguments>
+<msg timestamp="20181226 19:41:52.049" level="INFO">Clicking element '//android.webkit.WebView[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.app.Dialog[@index='1']/android.view.View[@index='0']/android.widget.Button[@index='3']'.</msg>
+<status status="PASS" starttime="20181226 19:41:52.048" endtime="20181226 19:41:52.517"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[@index='0']/android.webkit.WebView[@index='0']/android.webkit.WebView[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.TabWidget[@index='0']/android.view.View[@index='3']</arg>
+</arguments>
+<msg timestamp="20181226 19:41:52.519" level="INFO">Clicking element '//android.widget.FrameLayout[@index='0']/android.webkit.WebView[@index='0']/android.webkit.WebView[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.TabWidget[@index='0']/android.view.View[@index='3']'.</msg>
+<status status="PASS" starttime="20181226 19:41:52.517" endtime="20181226 19:41:53.712"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20181226 19:41:54.714" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20181226 19:41:53.712" endtime="20181226 19:41:54.714"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20181226 19:41:55.714" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20181226 19:41:54.714" endtime="20181226 19:41:55.714"></status>
+</kw>
+<status status="PASS" starttime="20181226 19:41:05.519" endtime="20181226 19:41:55.714"></status>
+</kw>
+<status status="PASS" starttime="20181226 19:41:05.518" endtime="20181226 19:41:55.715" critical="yes"></status>
+</test>
+<doc>This script starts apps on two phones</doc>
+<status status="PASS" starttime="20181226 19:41:05.391" endtime="20181226 19:41:55.717"></status>
+</suite>
+<status status="PASS" starttime="20181226 19:41:05.369" endtime="20181226 19:41:55.720"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tsting">Tsting</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">Tsting.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.6.5 on win32)" generated="20181214 17:48:52.825" rpa="false">
+<suite id="s1" name="Test" source="C:\hi\selenium using appium\neeraj\Tsting\Test.robot">
+<test id="s1-t1" name="Test">
+<kw name="setup and open android phone1">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${APPIUM_SERVER1}</arg>
+<arg>platformName=android</arg>
+<arg>platformVersion=8.1.0</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.grabqpons.android</arg>
+<arg>newCommandTimeout=500000</arg>
+<arg>appActivity=com.grabqpons.android.MainActivity</arg>
+</arguments>
+<assign>
+<var>${androiddriver1}</var>
+</assign>
+<msg timestamp="20181214 17:48:55.634" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 8.1.0. The following are available: emulator-5554 (9)
+</msg>
+<status status="FAIL" starttime="20181214 17:48:54.587" endtime="20181214 17:48:55.634"></status>
+</kw>
+<status status="FAIL" starttime="20181214 17:48:54.587" endtime="20181214 17:48:55.634"></status>
+</kw>
+<status status="FAIL" starttime="20181214 17:48:54.586" endtime="20181214 17:48:55.635" critical="yes">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 8.1.0. The following are available: emulator-5554 (9)
+</status>
+</test>
+<doc>This script starts apps on two phones</doc>
+<status status="FAIL" starttime="20181214 17:48:52.827" endtime="20181214 17:48:55.636"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
