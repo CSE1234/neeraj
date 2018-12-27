@@ -225,5 +225,5 @@ setup and open android phone1
   #click element  //android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='1']/android.widget.CheckBox[@index='1']
   #click element  //android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='2']/android.widget.CheckBox[@index='1']
   #click element  //android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='3']/android.widget.CheckBox[@index='1']
-    click element
+
   #click element  //android.view.View[@index='1']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.view.View[@index='0']/android.widget.Button[@index='0'] | \\android.widget.Button[@content-desc='done all ']
